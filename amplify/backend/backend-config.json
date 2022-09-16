@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyappe8cbee3c": {
+    "amplifyapp": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -8,12 +8,12 @@
       "frontendAuthConfig": {
         "socialProviders": [],
         "usernameAttributes": [],
-        "signupAttributes": [
-          "EMAIL"
-        ],
+        "signupAttributes": [],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": []
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE"
+          ]
         },
         "mfaConfiguration": "OFF",
         "mfaTypes": [
