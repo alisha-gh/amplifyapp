@@ -80,11 +80,11 @@ function App({ signOut }) {
     }, []);
 
     async function onChange(e) {
-    if (!e.target.files[0]) return
-    const file = e.target.files[0];
-    setFormData({ ...formData, image: file.name });
-    await Storage.put(file.name, file);
-    fetchNotes();
+      if (!e.target.files[0]) return
+      const file = e.target.files[0];
+      setFormData({ ...formData, image: file.name });
+      await Storage.put(file.name, file);
+      fetchNotes();
     }
   
     async function fetchNotes() {
@@ -115,7 +115,6 @@ function App({ signOut }) {
       setNotes(newNotesArray);
       await API.graphql({ query: deleteNoteMutation, variables: { input: { id } }});
     }
-
 
     return (
       <div className="App">

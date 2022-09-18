@@ -99,8 +99,8 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Dashboard"
-          {...getOverrideProps(overrides, "Dashboard")}
+          children="Files"
+          {...getOverrideProps(overrides, "Files")}
         ></Text> */}
       </Flex>
       <Flex
