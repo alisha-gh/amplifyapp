@@ -6,13 +6,16 @@ import config from './aws-exports';
 import Amplify from 'aws-amplify';
 import { AmplifyProvider } from '@aws-amplify/ui-react';
 import '../node_modules/@aws-amplify/ui-react/dist/styles.css'
+import {Account}  from './Accounts';
 
 
 Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <AmplifyProvider>
-    <App />
-  </AmplifyProvider>
+  <Account>
+    <AmplifyProvider>
+      <App />
+    </AmplifyProvider>
+  </Account>
 );

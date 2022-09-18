@@ -49,5 +49,11 @@
       "providerPlugin": "awscloudformation",
       "dependsOn": []
     }
+  },
+  "analytics": {
+    "amplifyapp": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

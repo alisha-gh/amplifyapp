@@ -22,5 +22,12 @@ export type AmplifyDependentResourcesAttributes = {
             "BucketName": "string",
             "Region": "string"
         }
+    },
+    "analytics": {
+        "amplifyapp": {
+            "Region": "string",
+            "Id": "string",
+            "appName": "string"
+        }
     }
 }

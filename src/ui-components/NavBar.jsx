@@ -84,7 +84,7 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 32129767076")}
       >
-        <Text
+        {/* <Text
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="400"
@@ -101,25 +101,7 @@ export default function NavBar(props) {
           whiteSpace="pre-wrap"
           children="Dashboard"
           {...getOverrideProps(overrides, "Dashboard")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(0,0,0,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="flex"
-          direction="column"
-          justifyContent="flex-start"
-          letterSpacing="0.01px"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Files"
-          {...getOverrideProps(overrides, "Files")}
-        ></Text>
+        ></Text> */}
       </Flex>
       <Flex
         gap="32px"
